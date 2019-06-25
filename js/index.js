@@ -14,7 +14,7 @@ const urlFirstStep = "https://us-central1-verto-backend-dev.cloudfunctions.net/c
   const btnFirstStep = document.querySelector("");
   const btnLastStep = document.querySelector("");
   const txtEmail = document.querySelector("input#emilio");
-  const txtName = document.querySelector("input");
+  const txtName = document.querySelector("input#name");
   const txtMsg = document.querySelector("span#msg");
 
   //Events
