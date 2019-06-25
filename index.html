@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css"/>
+  <title>Code Challenge</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Code Challenge Form</h1>
+    <div>
+      <input type="email" id="email" name="email" value="" placeholder="Enter your email"/>
+      <button id="first">First Step</button>
+    </div>
+    <hr>
+    <div>
+      <input type="text" id="name" name="name" placeholder="Enter your name"/>
+      <button class="last" disabled>Last Step</button> <span id="msg"></span>
+    </div>
+    <div class="note card card-body bg-light">
+      <h5>Reglas del exámen de código...</h5>
+      <ol>
+        <li>Se evaluará manejo de JS (enfatizando en comunicación asíncrona) y HTML.</li>
+        <li>Este código tiene errores y falta terminarlo. El objetivo es enviar tus datos al servidor (email, nombre).</li>
+        <li>First Step: Enviar tu email al servidor. Como respuesta obtendras la URL para usar en el paso2 y un ID de carga.</li>
+        <li>Last Step: Enviar tu nombre al servidor utilizando la URL y el ID de carga obtenidos en paso 1.</li>
+        <li>La primera vez que ingresas tu email se te asignará un ID de carga, si volves a probar el paso 1, obtendras el mismo ID de carga</li>
+        <li>Por favor, utilizá tus datos reales ya que me comunicaré al email que hayas cargado.</li>
+      </ol>
+      <h5>API</h5>
+      <pre>
+        - POST challengeFirstStep
+        recibe: token, email
+        responde: url, id
+        - POST "nombre secreto, tenes que completar First Step"
+        recibe: token, name,id
+        responde: data
+      </pre>
+      <br/>
+      <span>Gracias y éxitos! <br/> Mario Romero</span>
+    </div>
+  </div>
+
+  <script>
+    window.appToken = "87p36457e2783deMNDHF--erer--ioioERERioio22";
+  </script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

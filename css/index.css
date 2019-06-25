@@ -1,0 +1,13 @@
+body {
+  margin-top: 2em;
+  padding: 1em;
+  font-family: monospace;
+}
+
+.note {
+  margin-top: 2em;
+}
+
+.note ol {
+  margin-top: 0.5em;
+}
